@@ -12,10 +12,7 @@ class Usuario extends Authenticatable  implements MustVerifyEmail
     protected $fillable = ['nombre', 'email', 'password']; 
 
     
-    public function direcciones()
-    {
-        return $this->hasMany(Direccion::class); 
-    }
+    
 
-    // Cualquier otra relación pertinente
+    
 }
